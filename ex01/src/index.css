@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    text-align: center;
+    color: rgb(11, 17, 22);
+    margin:10px 0;
+}
+#content{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    left: 20%;
+    overflow: hidden;
+}
+#text-area{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40%;
+    padding: 2px 20px;
+}
+#text-value{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px;
+    border: 2px solid rgb(43, 129, 179);
+    color:rgb(13, 19, 77);
+    font-size: 18px;
+}
+#keyboard{
+    display: block;
+    position: relative;
+    width: 100%;
+    height:auto;
+    margin: 5px 0;
+}
+#keyboard .row{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.row button{
+    float: left;
+    margin:0;
+    padding: 0;
+}
+#keyboard .keyboard-button{
+    display: inline-block;
+    border: 1px solid rgb(182, 175, 175);
+    border-collapse: collapse;
+    width: 8.3%;
+    height:55px;
+    text-align: center;
+    position: relative;
+    background-color: rgb(31, 25, 31);
+    color: whitesmoke;
+    outline: none;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+#keyboard .keyboard-button:active{
+    transform: scale(0.9,0.9);
+    background-color: rgb(53, 54, 58);
+    transition: 0.2s;
+}
+
+#backspace, #enter{
+    float: right;
+    width: 17% !important;
+}
+#capslock, #shift, #ok{
+    width: 25.3% !important;
+    float: right;
+}
+#space{
+    width: 74.7% !important;
+}
+#capslock.active, #shift.active{
+    color: black;
+    background-color: whitesmoke;
+}
